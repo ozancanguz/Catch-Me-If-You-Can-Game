@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
 
                 builder.setTitle("Tekrar oynamak ister misin")
 
-                builder.setPositiveButton("yes") { dialog, which ->
+                builder.setPositiveButton("evet") { dialog, which ->
 
                     val intent=intent
                     finish()
@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
 
                 }
 
-                builder.setNegativeButton("no") { dialog, which ->
+                builder.setNegativeButton("hayır") { dialog, which ->
                  Toast.makeText(applicationContext,"Oyun bitti",Toast.LENGTH_LONG).show()
                 }
 
